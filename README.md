@@ -31,7 +31,7 @@ use Prismic;
 
 class LinkListHelperFactory
 {
-    public function __invoke(ContainerInterface $container, $requestedName, array $options = null) : SearchService
+    public function __invoke(ContainerInterface $container, $requestedName, array $options = null)
     {
         $api      = $container->get(Prismic\Api::class);
         $resolver = $container->get(Prismic\LinkResolver::class);
