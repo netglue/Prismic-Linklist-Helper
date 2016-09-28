@@ -112,6 +112,44 @@ class LinkListHelper
     }
 
     /**
+     * Given a bookmark name, return a link array for the corresponding document
+     *
+     * @param string $bookmark
+     * @return array
+     */
+    public function bookmarkToArray(string $bookmark) : array
+    {
+        $id = $this->api->bookmark($bookmark);
+        if (null === $id) {
+            throw new \RuntimeException(sprintf(
+                'There is no document with the bookmark %s',
+                $bookmark
+            ));
+        }
+
+        return $this->documentIdToArray($id);
+    }
+
+    /**
+     * Given a document id, return a link array for the corresponding document
+     *
+     * @param string $id
+     * @return array
+     */
+    public function documentIdToArray(string $id) : array
+    {
+        $document = $this->api->getByID($id);
+        if (null === $document) {
+            throw new \RuntimeException(sprintf(
+                'There is no document with the id %s',
+                $id
+            ));
+        }
+
+        return $this->documentToArray($document);
+    }
+
+    /**
      * Given a document, find the group containing the links and return as an array
      *
      * @param  Prismic\Document $linkList

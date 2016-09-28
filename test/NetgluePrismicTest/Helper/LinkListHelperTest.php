@@ -125,4 +125,37 @@ class LinkListHelperTest extends \PHPUnit_Framework_TestCase
         $links = $helper->documentToArray($parent);
     }
 
+    /**
+     * @expectedException RuntimeException
+     * @expectedExceptionMessage There is no document with the bookmark
+     */
+    public function testBookmarkInvalidThrowsException()
+    {
+        $helper = new LinkListHelper($this->api, $this->resolver);
+        $this->api->method('bookmark')->willReturn(null);
+        $helper->bookmarkToArray('foo');
+    }
+
+    /**
+     * @expectedException RuntimeException
+     * @expectedExceptionMessage There is no document with the id
+     */
+    public function testInvalidIdThrowsException()
+    {
+        $helper = new LinkListHelper($this->api, $this->resolver);
+        $this->api->method('bookmark')->willReturn('foo');
+        $this->api->method('getByID')->willReturn(null);
+        $helper->bookmarkToArray('foo');
+    }
+
+    public function testBookmarkToArray()
+    {
+        $helper = new LinkListHelper($this->api, $this->resolver);
+        $this->api->method('bookmark')->willReturn('foo');
+        $doc = $this->getFlatDocument();
+        $this->api->method('getByID')->willReturn($doc);
+        $links = $helper->bookmarkToArray('foo');
+        $this->assertCount(6, $links);
+    }
+
 }

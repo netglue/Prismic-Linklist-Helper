@@ -50,6 +50,14 @@ Once you have an instance, you can generate an array of 'ready to render' link i
 $links = $helper->documentToArray($document);
 ```
 
+Alternatively, you can provide either bookmark names or document IDs to the relevant method to achieve the same thing:
+
+```php
+$links = $helper->bookmarkToArray('bookmark-name');
+// ... or ...
+$links = $helper->documentIdToArray('Some-Document-Id');
+```
+
 Assuming your document type is `link-list` and the group fragment name containing the link info is `links`, that's all you need, otherwise, you can set the document type and fragment name, either in your factory or on an individual basis with:
 
 ```php
