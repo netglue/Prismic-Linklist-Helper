@@ -1,0 +1,70 @@
+{
+	"Name & Description": {
+		"name": {
+			"type": "StructuredText",
+			"fieldset": "Give a name to this list of links so that you can find it easily",
+			"config": {
+				"single": "heading1",
+				"placeholder": "For example: 'Primary Navigation'"
+			}
+		},
+		"description": {
+			"type": "StructuredText",
+			"fieldset": "Optionally, provide a description to other users of the system so they know what the list is for",
+			"config": {
+				"single": "paragraph",
+				"placeholder": "i.e. This is the list of links in the header of the website…"
+			}
+		}
+	},
+	"Links": {
+		"title": {
+			"type": "Text",
+			"fieldset": "Menu Title",
+			"config": {
+				"label": "Menu Title",
+				"placeholder": "This might be used in the design to provide a title for the menu"
+			}
+		},
+		"links": {
+			"type": "Group",
+			"fieldset": "Links:",
+			"config": {
+				"fields": {
+					"text": {
+						"type": "Text",
+						"fieldset": "Link 'Anchor' Text",
+						"config": {
+							"label": "Link Text",
+							"placeholder": "The text that the user sees"
+						}
+					},
+					"href": {
+						"type": "Link",
+						"fieldset": "URL/Address",
+						"config": {
+							"label": "URL",
+							"placeholder": "Select a local page or enter an external URL"
+						}
+					},
+					"title": {
+						"type": "Text",
+						"fieldset": "Optional link title (Tooltip)",
+						"config": {
+							"label": "Tooltip",
+							"placeholder": "Optional link title (tooltip)"
+						}
+					},
+					"class": {
+						"type": "Text",
+						"fieldset": "Advanced: Optional CSS Class",
+						"config": {
+							"label": "CSS Class",
+							"placeholder": "Used by the web designer to style specific links"
+						}
+					}
+				}
+			}
+		}
+	}
+}

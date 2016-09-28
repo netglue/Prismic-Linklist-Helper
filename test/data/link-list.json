@@ -1,0 +1,155 @@
+{
+    "id": "DocumentID",
+    "uid": null,
+    "type": "link-list",
+    "href": "https://someplace.prismic.io/api/documents/search?ref=MasterRefID&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22DocumentID%22%29+%5D%5D",
+    "tags": [],
+    "first_publication_date": null,
+    "last_publication_date": null,
+    "slugs": [
+        "my-navigation"
+    ],
+    "linked_documents": [
+    ],
+    "data": {
+        "link-list": {
+            "name": {
+                "type": "StructuredText",
+                "value": [
+                    {
+                        "type": "heading1",
+                        "text": "Some Navigation Structure",
+                        "spans": []
+                    }
+                ]
+            },
+            "links": {
+                "type": "Group",
+                "value": [
+                    {
+                        "text": {
+                            "type": "Text",
+                            "value": "Link 1"
+                        },
+                        "href": {
+                            "type": "Link.document",
+                            "value": {
+                                "document": {
+                                    "id": "V1gHmygAAEmp708x",
+                                    "type": "page",
+                                    "tags": [],
+                                    "slug": "link1",
+                                    "uid": "link1"
+                                },
+                                "isBroken": false
+                            }
+                        },
+                        "class": {
+                            "type": "Text",
+                            "value": "some-css-class"
+                        },
+                        "data-value": {
+                            "type": "Text",
+                            "value": "Some Value"
+                        }
+                    },
+                    {
+                        "text": {
+                            "type": "Text",
+                            "value": "Link 2"
+                        },
+                        "href": {
+                            "type": "Link.document",
+                            "value": {
+                                "document": {
+                                    "id": "V2L8XyoAAPy0Kck3",
+                                    "type": "page",
+                                    "tags": [],
+                                    "slug": "link2",
+                                    "uid": "link2"
+                                },
+                                "isBroken": false
+                            }
+                        }
+                    },
+                    {
+                        "text": {
+                            "type": "Text",
+                            "value": "Link 3"
+                        },
+                        "href": {
+                            "type": "Link.document",
+                            "value": {
+                                "document": {
+                                    "id": "V2L7USoAABy3KcLU",
+                                    "type": "page",
+                                    "tags": [],
+                                    "slug": "link3",
+                                    "uid": "link3"
+                                },
+                                "isBroken": false
+                            }
+                        }
+                    },
+                    {
+                        "text": {
+                            "type": "Text",
+                            "value": "Link 4"
+                        },
+                        "href": {
+                            "type": "Link.document",
+                            "value": {
+                                "document": {
+                                    "id": "V1gHzygAACep71Bw",
+                                    "type": "page",
+                                    "tags": [],
+                                    "slug": "link4",
+                                    "uid": "link4"
+                                },
+                                "isBroken": false
+                            }
+                        }
+                    },
+                    {
+                        "text": {
+                            "type": "Text",
+                            "value": "Link 5"
+                        },
+                        "href": {
+                            "type": "Link.document",
+                            "value": {
+                                "document": {
+                                    "id": "V2L88yoAABm3Kcy_",
+                                    "type": "page",
+                                    "tags": [],
+                                    "slug": "link5",
+                                    "uid": "link5"
+                                },
+                                "isBroken": false
+                            }
+                        }
+                    },
+                    {
+                        "text": {
+                            "type": "Text",
+                            "value": "Link 6"
+                        },
+                        "href": {
+                            "type": "Link.document",
+                            "value": {
+                                "document": {
+                                    "id": "V1gHfigAAEmp7058",
+                                    "type": "page",
+                                    "tags": [],
+                                    "slug": "link6",
+                                    "uid": "link6"
+                                },
+                                "isBroken": false
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

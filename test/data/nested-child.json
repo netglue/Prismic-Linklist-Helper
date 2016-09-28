@@ -1,0 +1,52 @@
+{
+    "id": "ChildNavID",
+    "uid": null,
+    "type": "link-list",
+    "href": "https://someplace.prismic.io/api/documents/search?ref=MasterRefID&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22DocumentID%22%29+%5D%5D",
+    "tags": [],
+    "first_publication_date": null,
+    "last_publication_date": null,
+    "slugs": [
+        "my-navigation"
+    ],
+    "linked_documents": [
+    ],
+    "data": {
+        "link-list": {
+            "name": {
+                "type": "StructuredText",
+                "value": [
+                    {
+                        "type": "heading1",
+                        "text": "Child Navigation Structure",
+                        "spans": []
+                    }
+                ]
+            },
+            "links": {
+                "type": "Group",
+                "value": [
+                    {
+                        "text": {
+                            "type": "Text",
+                            "value": "Link 1"
+                        },
+                        "href": {
+                            "type": "Link.document",
+                            "value": {
+                                "document": {
+                                    "id": "V1gHmygAAEmp708x",
+                                    "type": "page",
+                                    "tags": [],
+                                    "slug": "link1",
+                                    "uid": "link1"
+                                },
+                                "isBroken": false
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}
