@@ -10,7 +10,7 @@
         }
     ],
     "require": {
-        "prismic/php-sdk": "^3.0"
+        "prismic/php-sdk": "*"
     },
     "require-dev": {
         "phpunit/phpunit": "^5.5"
