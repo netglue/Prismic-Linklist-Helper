@@ -1,5 +1,7 @@
 # Prismic.io Link List Helper
 
+**This Helper library is no longer maintained**
+
 I'm in the habit of creating lists of links to use throughout content managed websites built using [prismic](https://prismic.io). This means that the end user can manage primary site navigation easily and re-order links as they see fit.
 
 Link lists have to contain a group type fragment where each fragment within the group is used to create the link itself. One drawback to Prismic is the inability to nest group fragments, so this helper identifies links to other link lists and uses these to generate sub menus in the same way as a flat menu.
